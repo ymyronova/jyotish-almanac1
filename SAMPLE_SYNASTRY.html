@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Джйотиш-Альманах · Юлия × Партнёр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--night:#14142b;--night2:#1c1c3a;--panel:#1a1a34;--gold:#c9a84c;--gold-soft:#e6cf8b;
+--parch:#f4efe3;--plum:#7d5a86;--mute:#b9b4c9;--line:rgba(201,168,76,.22);
+--green:#4f9d69;--blue:#4a7fb5;--yellow:#d9b23a;--red:#c25b5b;}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 600px at 80% -5%,#23234d 0,transparent 55%),
+radial-gradient(900px 500px at 0 100%,#201b3a 0,transparent 50%),var(--night);
+color:var(--parch);font-family:'Spectral',Georgia,serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px 90px;}
+h1,h2,h3,.disp{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:.3px;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+.hero{padding:54px 0 24px;text-align:center;}
+.hero .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);opacity:.85;}
+.hero h1{font-size:clamp(38px,8vw,70px);line-height:.98;margin:.16em 0 .08em;
+background:linear-gradient(180deg,#fff 0,var(--gold-soft) 60%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero .sub{color:var(--mute);font-size:17px;font-style:italic;}
+.hero .meta{margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--plum);letter-spacing:1px;}
+.chartwrap{display:flex;justify-content:center;margin:28px auto 8px;max-width:420px;}
+.chart{width:100%;height:auto;overflow:visible;} .natal{filter:drop-shadow(0 10px 30px rgba(0,0,0,.4));}
+section{margin-top:60px;}
+.sec-head{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:24px;}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold);border:1px solid var(--gold);border-radius:50%;width:34px;height:34px;min-width:34px;display:flex;align-items:center;justify-content:center;}
+.sec-head h2{font-size:clamp(24px,4vw,34px);margin:0;}
+p{margin:0 0 15px;} .prose{font-size:16.5px;white-space:pre-wrap;}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:20px 22px;margin:16px 0;}
+.callout{border-left:3px solid var(--gold);padding:4px 0 4px 18px;margin:18px 0;color:var(--gold-soft);font-style:italic;}
+.thread{max-width:760px;margin:0 auto;padding:24px 28px;border:1px solid var(--line);border-radius:4px;
+background:linear-gradient(180deg,rgba(244,239,227,.04),rgba(244,239,227,.01));font-size:18px;text-align:left;}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0;}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(201,168,76,.13);}
+th{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);font-weight:500;}
+td.mono{font-family:'IBM Plex Mono',monospace;}
+.grid{font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-align:center;}
+.grid th,.grid td{text-align:center;padding:6px 4px;} .grid td.pl{text-align:left;font-family:'Spectral',serif;white-space:nowrap;}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:5px;}
+.legend{font-size:12px;color:var(--mute);font-family:'IBM Plex Mono',monospace;margin-top:8px;}
+.pill{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;padding:2px 8px;border-radius:20px;border:1px solid var(--line);color:var(--gold-soft);margin-right:4px;}
+.dasha-now td{background:rgba(201,168,76,.10);}
+.tag{color:var(--green)} .tag.w{color:var(--red)} .tag.m{color:var(--yellow)} .tag.b{color:var(--blue)}
+.foot{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--plum);font-family:'IBM Plex Mono',monospace;line-height:1.9;}
+
+.cmp{margin:10px 0;} .cmp-head{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
+.cmp-row{display:grid;grid-template-columns:76px 1fr 34px 1fr 34px;align-items:center;gap:7px;margin-bottom:6px;font-size:13px;}
+.cmp-l{color:var(--parch);} .cmp-v{color:var(--gold-soft);font-size:12px;text-align:center;}
+.cmp-track{height:9px;border-radius:6px;background:rgba(201,168,76,.1);overflow:hidden;display:flex;}
+.cmp-track i{height:100%;display:block;} .cmp-track i.a{background:linear-gradient(90deg,#4a7fb5,#8bb6c9);margin-left:auto;}
+.cmp-track.r i.b{background:linear-gradient(90deg,#c9a84c,#e6cf8b);}
+.overlay{list-style:none;padding:0;margin:6px 0;} .overlay li{padding:6px 0;border-bottom:1px solid rgba(201,168,76,.1);font-size:14.5px;}
+.names{display:flex;gap:18px;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;margin-top:6px;}
+.names .a b{color:#8bb6c9;} .names .b b{color:var(--gold-soft);}
+.tagset{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0;}
+.tagset span{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:3px 10px;border-radius:20px;border:1px solid var(--line);}
+</style></head><body><div class="wrap"><div class="hero">
+      <div class="eyebrow">Джйотиш · Совместимость двух карт</div>
+      <h1>Юлия × Партнёр</h1>
+      <div class="sub">Аштакута · поле × игрок · интерсинастрия</div></div><section><div class="sec-head"><div class="sec-num">1</div><h2>Гуна Милан · Аштакута</h2></div>
+      <div style="text-align:center"><svg viewBox="0 0 460 160" xmlns="http://www.w3.org/2000/svg" class="chart" style="max-width:360px">
+      <path d="M 140.0 118.0 A 90 90 0 1 1 320.0 118.0" fill="none" stroke="rgba(201,168,76,.15)" stroke-width="14" stroke-linecap="round"/>
+      <path d="M 140.0 118.0 A 90 90 0 0 1 253.3 31.1" fill="none" stroke="#c9a84c" stroke-width="14" stroke-linecap="round"/>
+      <text x="230.0" y="112" text-anchor="middle" fill="#c9a84c" font-size="40" font-family="Cormorant Garamond,serif" font-weight="600">21</text>
+      <text x="230.0" y="136" text-anchor="middle" fill="#b9b4c9" font-size="13" font-family="IBM Plex Mono,monospace">из 36</text>
+    </svg>
+      <p style="color:var(--gold-soft);font-style:italic;margin-top:-6px">рабочая совместимость</p></div>
+      <div class="tablewrap"><table><thead><tr><th>Кута</th><th class="mono">Балл</th><th>Что показывает</th></tr></thead>
+      <tbody><tr><td>Варна</td><td class='mono' style='color:#4f9d69'>1 / 1</td><td style='color:var(--mute);font-size:13px'>духовная совместимость / рост</td></tr><tr><td>Вашья</td><td class='mono' style='color:#4f9d69'>2 / 2</td><td style='color:var(--mute);font-size:13px'>притяжение, влияние друг на друга</td></tr><tr><td>Тара</td><td class='mono' style='color:#4f9d69'>3 / 3</td><td style='color:var(--mute);font-size:13px'>здоровье и благополучие связи</td></tr><tr><td>Йони</td><td class='mono' style='color:#c9a84c'>2 / 4</td><td style='color:var(--mute);font-size:13px'>телесная и инстинктивная совместимость</td></tr><tr><td>Граха-майтри</td><td class='mono' style='color:#4f9d69'>5 / 5</td><td style='color:var(--mute);font-size:13px'>дружба умов, ментальная близость</td></tr><tr><td>Гана</td><td class='mono' style='color:#c25b5b'>0 / 6</td><td style='color:var(--mute);font-size:13px'>темперамент и природа</td></tr><tr><td>Бхакут</td><td class='mono' style='color:#c25b5b'>0 / 7</td><td style='color:var(--mute);font-size:13px'>эмоциональная гармония, семья</td></tr><tr><td>Нади</td><td class='mono' style='color:#4f9d69'>8 / 8</td><td style='color:var(--mute);font-size:13px'>здоровье потомства, глубинная энергия</td></tr></tbody></table></div>
+      <p class="legend">Луна Юлия: Вишакха (Весы) · Луна Партнёр: Пурва Бхадрапада (Водолей)</p></section><section><div class="sec-head"><div class="sec-num">2</div><h2>Сила ПОЛЯ — бинду по домам</h2></div>
+      <div class="cmp-head"><span style="color:#8bb6c9">◧ Юлия</span><span style="color:var(--gold-soft)">Партнёр ◧</span></div>
+      <div class='cmp'><div class='cmp-row'><span class='cmp-l'>дом 1</span><span class='cmp-track'><i class='a' style='width:73%'></i></span><span class='cmp-v mono'>30</span><span class='cmp-track r'><i class='b' style='width:71%'></i></span><span class='cmp-v mono'>29</span></div><div class='cmp-row'><span class='cmp-l'>дом 2</span><span class='cmp-track'><i class='a' style='width:68%'></i></span><span class='cmp-v mono'>28</span><span class='cmp-track r'><i class='b' style='width:59%'></i></span><span class='cmp-v mono'>24</span></div><div class='cmp-row'><span class='cmp-l'>дом 3</span><span class='cmp-track'><i class='a' style='width:80%'></i></span><span class='cmp-v mono'>33</span><span class='cmp-track r'><i class='b' style='width:78%'></i></span><span class='cmp-v mono'>32</span></div><div class='cmp-row'><span class='cmp-l'>дом 4</span><span class='cmp-track'><i class='a' style='width:56%'></i></span><span class='cmp-v mono'>23</span><span class='cmp-track r'><i class='b' style='width:76%'></i></span><span class='cmp-v mono'>31</span></div><div class='cmp-row'><span class='cmp-l'>дом 5</span><span class='cmp-track'><i class='a' style='width:73%'></i></span><span class='cmp-v mono'>30</span><span class='cmp-track r'><i class='b' style='width:54%'></i></span><span class='cmp-v mono'>22</span></div><div class='cmp-row'><span class='cmp-l'>дом 6</span><span class='cmp-track'><i class='a' style='width:68%'></i></span><span class='cmp-v mono'>28</span><span class='cmp-track r'><i class='b' style='width:66%'></i></span><span class='cmp-v mono'>27</span></div><div class='cmp-row'><span class='cmp-l'>дом 7</span><span class='cmp-track'><i class='a' style='width:63%'></i></span><span class='cmp-v mono'>26</span><span class='cmp-track r'><i class='b' style='width:73%'></i></span><span class='cmp-v mono'>30</span></div><div class='cmp-row'><span class='cmp-l'>дом 8</span><span class='cmp-track'><i class='a' style='width:100%'></i></span><span class='cmp-v mono'>41</span><span class='cmp-track r'><i class='b' style='width:76%'></i></span><span class='cmp-v mono'>31</span></div><div class='cmp-row'><span class='cmp-l'>дом 9</span><span class='cmp-track'><i class='a' style='width:66%'></i></span><span class='cmp-v mono'>27</span><span class='cmp-track r'><i class='b' style='width:85%'></i></span><span class='cmp-v mono'>35</span></div><div class='cmp-row'><span class='cmp-l'>дом 10</span><span class='cmp-track'><i class='a' style='width:59%'></i></span><span class='cmp-v mono'>24</span><span class='cmp-track r'><i class='b' style='width:71%'></i></span><span class='cmp-v mono'>29</span></div><div class='cmp-row'><span class='cmp-l'>дом 11</span><span class='cmp-track'><i class='a' style='width:59%'></i></span><span class='cmp-v mono'>24</span><span class='cmp-track r'><i class='b' style='width:61%'></i></span><span class='cmp-v mono'>25</span></div><div class='cmp-row'><span class='cmp-l'>дом 12</span><span class='cmp-track'><i class='a' style='width:56%'></i></span><span class='cmp-v mono'>23</span><span class='cmp-track r'><i class='b' style='width:54%'></i></span><span class='cmp-v mono'>22</span></div></div></section><section><div class="sec-head"><div class="sec-num">3</div><h2>Сила ИГРОКОВ — Вимшопака</h2></div>
+      <div class="cmp-head"><span style="color:#8bb6c9">◧ Юлия</span><span style="color:var(--gold-soft)">Партнёр ◧</span></div>
+      <div class='cmp'><div class='cmp-row'><span class='cmp-l'>Солнце</span><span class='cmp-track'><i class='a' style='width:73%'></i></span><span class='cmp-v mono'>12.06</span><span class='cmp-track r'><i class='b' style='width:77%'></i></span><span class='cmp-v mono'>12.69</span></div><div class='cmp-row'><span class='cmp-l'>Луна</span><span class='cmp-track'><i class='a' style='width:86%'></i></span><span class='cmp-v mono'>14.12</span><span class='cmp-track r'><i class='b' style='width:83%'></i></span><span class='cmp-v mono'>13.62</span></div><div class='cmp-row'><span class='cmp-l'>Марс</span><span class='cmp-track'><i class='a' style='width:67%'></i></span><span class='cmp-v mono'>11</span><span class='cmp-track r'><i class='b' style='width:77%'></i></span><span class='cmp-v mono'>12.69</span></div><div class='cmp-row'><span class='cmp-l'>Меркурий</span><span class='cmp-track'><i class='a' style='width:95%'></i></span><span class='cmp-v mono'>15.62</span><span class='cmp-track r'><i class='b' style='width:57%'></i></span><span class='cmp-v mono'>9.44</span></div><div class='cmp-row'><span class='cmp-l'>Юпитер</span><span class='cmp-track'><i class='a' style='width:65%'></i></span><span class='cmp-v mono'>10.69</span><span class='cmp-track r'><i class='b' style='width:73%'></i></span><span class='cmp-v mono'>12.06</span></div><div class='cmp-row'><span class='cmp-l'>Венера</span><span class='cmp-track'><i class='a' style='width:67%'></i></span><span class='cmp-v mono'>11.12</span><span class='cmp-track r'><i class='b' style='width:100%'></i></span><span class='cmp-v mono'>16.5</span></div><div class='cmp-row'><span class='cmp-l'>Сатурн</span><span class='cmp-track'><i class='a' style='width:89%'></i></span><span class='cmp-v mono'>14.62</span><span class='cmp-track r'><i class='b' style='width:52%'></i></span><span class='cmp-v mono'>8.56</span></div></div></section><section><div class="sec-head"><div class="sec-num">4</div><h2>Интерсинастрия — наложение карт</h2></div>
+      <div class="card"><p style="margin:0 0 6px;color:var(--gold-soft)"><b>Планеты Партнёр на домах Юлия</b></p><ul class='overlay'><li><b>Луна</b> Партнёр → <b>7-й дом</b> Юлия <span style='color:var(--mute)'>(партнёрство/близость)</span></li><li><b>Сатурн</b> Партнёр → <b>4-й дом</b> Юлия <span style='color:var(--mute)'>(дом/сердце)</span></li></ul></div>
+      <div class="card"><p style="margin:0 0 6px;color:#8bb6c9"><b>Планеты Юлия на домах Партнёр</b></p><ul class='overlay'><li><b>Меркурий</b> Юлия → <b>1-й дом</b> Партнёр <span style='color:var(--mute)'>(личность/тело)</span></li><li><b>Юпитер</b> Юлия → <b>1-й дом</b> Партнёр <span style='color:var(--mute)'>(личность/тело)</span></li><li><b>Венера</b> Юлия → <b>1-й дом</b> Партнёр <span style='color:var(--mute)'>(личность/тело)</span></li><li><b>Марс</b> Юлия → <b>10-й дом</b> Партнёр <span style='color:var(--mute)'>(статус/дело)</span></li></ul></div>
+      <p class="prose">Планеты B на домах A: Луна→7-й, Сатурн→4-й. Подключите ANTHROPIC_API_KEY для развёрнутого разбора. (шаблон)</p>
+      <p class="legend">Даракарака (тема партнёра) — Юлия: Юпитер · Партнёр: Сатурн</p></section><section><div class="sec-head"><div class="sec-num">5</div><h2>Контрасты и дополнения</h2></div>
+      <div class="card"><p style="margin:0 0 4px;color:#4f9d69"><b>Дополнения</b> (один силён — другой опирается)</p><div class="tagset"><span>дом 4</span><span>дом 5</span></div>
+      <p style="margin:10px 0 4px;color:#4a7fb5"><b>Общая сила</b> (оба сильны — синергия/соперничество)</p><div class="tagset"><span>дом 3</span><span>дом 8</span></div>
+      <p style="margin:10px 0 4px;color:#c25b5b"><b>Зеркальная уязвимость</b> (оба слабы — беречь вместе)</p><div class="tagset"><span>дом 12</span></div></div>
+      <p class="prose">Дополнения: дома [4, 5]; зеркальные слабости: [12]. (шаблон)</p></section><section><div class="sec-head"><div class="sec-num">6</div><h2>Формула пары</h2></div>
+      <div class="thread"><p class="prose" style="margin:0">Аштакута 21.0/36. Полная формула пары — при подключённом Claude. (шаблон)</p></div></section>
+      <div class="foot">ДЖЙОТИШ · Совместимость · Юлия × Партнёр<br>
+      Аштакута (Гуна Милан) 36 · SAV · Вимшопака · интерсинастрия · Swiss Ephemeris<br>
+      Символический интерпретативный материал, не суждение о людях. </div></div></body></html>
